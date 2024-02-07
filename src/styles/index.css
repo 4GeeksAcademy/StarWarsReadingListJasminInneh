@@ -5,3 +5,7 @@ body {
     background: black;
 }
 
+.custom-card-style {
+    border: none; 
+    box-shadow: none;
+  }
