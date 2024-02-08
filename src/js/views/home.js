@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/home.css";
+import { Heart } from "react-bootstrap-icons";
 
 export const Home = () => (
 	<div className="container text-center">
@@ -12,7 +13,12 @@ export const Home = () => (
 				<div className="card-body">
 					<h5 className="card-title">Leia Organa</h5>
 					<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" className="btn btn-primary">Learn more</a>
+					<div className="buttons justify-content-between d-flex">
+					<a href="#" className="btn btn-warning">Learn more</a>
+					<button type="button" className="btn btn-outline-warning">
+					<Heart size={25}/>
+					</button>
+					</div>					
 				</div>
 			</div>	
     		</div>
@@ -22,7 +28,12 @@ export const Home = () => (
 				<div className="card-body">
 					<h5 className="card-title">Beru Whitesun Lars</h5>
 					<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" className="btn btn-primary">Learn more</a>
+					<div className="buttons justify-content-between d-flex">
+					<a href="#" className="btn btn-warning">Learn more</a>
+					<button type="button" className="btn btn-outline-warning">
+					<Heart size={25}/>
+					</button>
+					</div>	
 				</div>
 			</div>	
     		</div>
@@ -32,7 +43,14 @@ export const Home = () => (
 				<div className="card-body">
 					<h5 className="card-title">C-3PO</h5>
 					<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" className="btn btn-primary">Learn more</a>
+					<div>
+					<div className="buttons justify-content-between d-flex">
+					<a href="#" className="btn btn-warning">Learn more</a>
+					<button type="button" className="btn btn-outline-warning">
+					<Heart size={25}/>
+					</button>
+					</div>	
+					</div>
 				</div>
 			</div>	
     		</div>
@@ -47,7 +65,12 @@ export const Home = () => (
 				<div className="card-body">
 					<h5 className="card-title">Hoth</h5>
 					<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" className="btn btn-primary">Learn more</a>
+					<div className="buttons justify-content-between d-flex">
+					<a href="#" className="btn btn-warning">Learn more</a>
+					<button type="button" className="btn btn-outline-warning">
+					<Heart size={25}/>
+					</button>
+					</div>			
 				</div>
 			</div>	
     		</div>
@@ -57,7 +80,12 @@ export const Home = () => (
 				<div className="card-body">
 					<h5 className="card-title">Dagobah</h5>
 					<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" className="btn btn-primary">Learn more</a>
+					<div className="buttons justify-content-between d-flex">
+					<a href="#" className="btn btn-warning">Learn more</a>
+					<button type="button" className="btn btn-outline-warning">
+					<Heart size={25}/>
+					</button>
+					</div>	
 				</div>
 			</div>	
     		</div>
@@ -67,7 +95,12 @@ export const Home = () => (
 				<div className="card-body">
 					<h5 className="card-title">Alderaan</h5>
 					<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" className="btn btn-primary float-left">Learn more</a>
+					<div className="buttons justify-content-between d-flex">
+					<a href="#" className="btn btn-warning">Learn more</a>
+					<button type="button" className="btn btn-outline-warning">
+					<Heart size={25}/>
+					</button>
+					</div>	
 				</div>
 			</div>	
     		</div>
