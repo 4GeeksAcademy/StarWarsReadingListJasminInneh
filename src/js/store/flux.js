@@ -17,7 +17,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				  .then((data) => {
 					console.log(data);
 		
-					setStore({ people: data });
+					setStore({ people: data.results });
 				  })
 				  .catch((error) => {
 					console.log(error);
@@ -32,7 +32,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				  .then((data) => {
 					console.log(data);
 		
-					setStore({ planet: data });
+					setStore({ planet: data.results });
 				  })
 				  .catch((error) => {
 					console.log(error);
@@ -47,7 +47,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				  .then((data) => {
 					console.log(data);
 		
-					setStore({ vehicles: data });
+					setStore({ vehicles: data.results });
 				  })
 				  .catch((error) => {
 					console.log(error);
