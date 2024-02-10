@@ -1,8 +1,10 @@
-import React from "react"
+import React, { useContext } from "react"
 import { Link } from "react-router-dom"
 import { Heart } from "react-bootstrap-icons"
+import { Context } from "../store/appContext";
 
 const People = (props) => {
+    const { store, actions } = useContext(Context)
     return (
         <div className="Characters">
             <div className="row">
@@ -14,7 +16,7 @@ const People = (props) => {
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <div className="buttons justify-content-between d-flex">
                                 <Link to={`/details/people/${props.id}`} className="btn btn-warning">Learn more</Link>
-                                <button type="button" className="btn btn-outline-warning">
+                                <button type="button" className="btn btn-outline-warning" id={props.id} onClick={() => { actions.getFavorites({ name: props.name, id: props.id }); }} >
                                     <Heart size={25} />
                                 </button>
                             </div>
