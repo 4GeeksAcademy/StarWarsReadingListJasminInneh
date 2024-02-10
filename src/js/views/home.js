@@ -4,7 +4,7 @@ import { Heart } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 import People from "../component/people";
 import Planets from "../component/planets";
-import Vehicles from "../component/vehicles";
+import Starships from "../component/starships";
 import { Context } from "../store/appContext";
 
 export const Home = () => {
@@ -24,10 +24,10 @@ export const Home = () => {
 					store.planet.map((planet, index) => <Planets id={planet.uid} name={planet.name} index={index} />)
 				}
 			</div>
-			<h2 className=" subtitles d-flex p-2 text-warning">Vehicles</h2>
+			<h2 className=" subtitles d-flex p-2 text-warning">Starships</h2>
 			<div className="d-flex gap-3">
 				{
-					store.vehicles.map((vehicles, index) => <Vehicles id={vehicles.uid} name={vehicles.name} index={index} />)
+					store.starships.map((starships, index) => <Starships id={starships.uid} name={starships.name} index={index} />)
 				}
 			</div>
 

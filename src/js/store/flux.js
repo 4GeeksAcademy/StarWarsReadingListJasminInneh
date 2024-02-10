@@ -3,7 +3,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			people: [],
 			planet: [],
-			vehicles: [],
+			starships: [],
 			favorites: []
 		},
 		actions: {
@@ -38,8 +38,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log(error);
 					});
 			},
-			getVehicles: () => {
-				fetch("https://www.swapi.tech/api/vehicles/")
+			getStarships: () => {
+				fetch("https://www.swapi.tech/api/starships/")
 					.then((resp) => {
 						if (!resp.ok) throw Error(resp.statusText);
 						return resp.json();
@@ -47,7 +47,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then((data) => {
 						console.log(data);
 
-						setStore({ vehicles: data.results });
+						setStore({ starships: data.results });
 					})
 					.catch((error) => {
 						console.log(error);
