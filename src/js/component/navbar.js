@@ -13,11 +13,10 @@ export const Navbar = () => {
 				<button className="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 					Favorites
 				</button>
-				<ul className="dropdown-menu">
-					<li><a className="dropdown-item" href="#">{
-						store.favorites.map((favorites, index) => favorites.name)
-					}
-					</a></li>
+				<ul className="dropdown-menu dropdown-menu-end">{
+					store.favorites?.map((favorites, index) =>
+						<li>{favorites.name}<button onClick={() => actions.removeFavorites(favorites)}>X</button></li>)
+				}
 				</ul>
 			</div>
 		</nav>

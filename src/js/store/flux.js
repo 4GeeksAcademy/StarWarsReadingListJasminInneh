@@ -58,6 +58,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const actions = getActions();
 				setStore({ favorites: [...store.favorites, likes] });
 				console.log(store.favorites)
+			},
+			removeFavorites: (likes) => {
+				const store = getStore();
+				setStore({ favorites: store.favorites.filter((fave)=> {return fave !== likes})})
 			}
 
 

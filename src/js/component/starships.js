@@ -1,8 +1,10 @@
-import React from "react"
+import React, { useContext } from "react"
 import { Link } from "react-router-dom"
 import { Heart } from "react-bootstrap-icons"
+import { Context } from "../store/appContext";
 
 const Starships = (props) => {
+    const { store, actions } = useContext(Context)
     return (
         <div className="Starships">
             <div className="row">
